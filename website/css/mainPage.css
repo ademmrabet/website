@@ -1,6 +1,17 @@
 body{
   background-color: black;
 }
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: verdana;
+  font-size: 14px;
+  color: rgb(239,239,239);
+  margin: 15px 32px 0 32px;
+  z-index: 10;
+  }
+nav a:hover {
+  color: pink;}
 .cb-slideshow,
 .cb-slideshow:after { 
     position: fixed;
@@ -100,4 +111,30 @@ body{
 @media screen and (max-width: 600px) { 
   .cb-slideshow li div h3 { font-size: 80px }
 }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
+ nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+  background-color:#d68060;
+}
+
+.active {
+  background-color: #f1ae89;
+}
